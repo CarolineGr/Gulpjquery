@@ -1,6 +1,9 @@
 .testing {
   width: 71.42857%; }
 
+div {
+  background-color: darkslateblue; }
+
 #parent {
   width: 300px;
   height: 300px;
