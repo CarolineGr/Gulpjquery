@@ -1,7 +1,7 @@
 $(function(){
     //dimension de la div
-    var largeur = ($('div').width())-128;
-    var hauteur = ($('div').height())- 128;
+    var largeur = ($('#div1').width())-128;
+    var hauteur = ($('#div1').height())- 128;
     console.log('L : '+largeur+' / l : '+hauteur);
 
     // affichage premiere image
@@ -12,8 +12,8 @@ $(function(){
 
     $('#target').offset(p);
 
-    // gestion evenement click
-    $('#target').click(function(){
+    // gestion evenement mouseenter
+    $('#target').mouseenter(function(){
         x = Math.floor(Math.random()*largeur);      
         y = Math.floor(Math.random()*hauteur); 
         console.log(x +' '+ y);
@@ -24,4 +24,12 @@ $(function(){
         $('#target').offset(p);
     });
 
+    // //gestion event scroll sur div2
+    // $('#div2').scroll(function () { 
+    //     alert('utilisation du scroll dans la div');
+    // });
+
+    // $('window').scroll(function () { 
+    //     alert('utilisation du scroll dans la fenêtre');
+    // });
 });
