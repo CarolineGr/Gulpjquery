@@ -1,3 +1,8 @@
+body{
+  background-color: hsl(0, 1%, 31%);
+  color: white;
+}
+
 .testing {
   width: percentage(5/7);
 }
@@ -49,4 +54,10 @@ body{
   overflow: scroll;
   background-color: #ffff0094;
   border: 2px black solid;
+}
+
+#lumiere{
+  width: 10px;
+  height: 10px;
+  background-color: red;
 }

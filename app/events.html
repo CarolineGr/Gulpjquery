@@ -4,13 +4,7 @@
         <meta charset="UTF-8">
         <title>Les évènements</title>
         <!--build:css css/styles.min.css-->
-        <style>
-            #lumiere{
-                width: 10px;
-                height: 10px;
-                background-color: red;
-            }
-        </style>
+        <link rel="stylesheet" href="css/styles.css">
         <!--endbuild-->
     </head>
 
@@ -51,7 +45,13 @@
             </select>        
         </form><br />
 
-        <span id="res1"></span>
+        <span id="res1"></span><br><br>
+
+        <!-- declenchement d'evenement -->
+        Cliquez sur l'image<br/>
+        <img id="img" src="images/bon.png"><br/>
+        <span id='message'></span><br/>
+        <button>Cliquez ici</button>
 
         <!--build:js js/main.min.js -->
         <script src="js/lib/jquery.js"></script>

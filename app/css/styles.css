@@ -1,3 +1,7 @@
+body {
+  background-color: #504e4e;
+  color: white; }
+
 .testing {
   width: 71.42857%; }
 
@@ -43,3 +47,8 @@ body {
   overflow: scroll;
   background-color: #ffff0094;
   border: 2px black solid; }
+
+#lumiere {
+  width: 10px;
+  height: 10px;
+  background-color: red; }

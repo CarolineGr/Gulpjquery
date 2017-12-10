@@ -32,4 +32,17 @@ $(function(){
     $('select').change(function () { 
         $('#res1').text('Vous avez sélectionné : ' + $(this).val());        
     });
+
+    // declencheur d'evenement
+    $('#img').click(function(event, texte){
+        if(texte == undefined){
+            texte = ' par vous.';
+        }
+        $('#message').text('L\'image a été cliquée '+ texte).fadeIn(1000).fadeOut(5000);
+    });
+    $('button').click(function(){
+        $('#img').trigger('click', 'par JQuery');
+    });
+
+
 });
