@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Les évènements</title>
+        <!--build:css css/styles.min.css-->
+        <style>
+            #lumiere{
+                width: 10px;
+                height: 10px;
+                background-color: red;
+            }
+        </style>
+        <!--endbuild-->
+    </head>
+
+    <body>
+        <!-- test souris -->
+        <img src="images/tresorerie.png" id="target">
+        <span id="rapport"></span>
+        <br>
+
+        <!-- test clavier -->
+        <div id="lumiere"></div>
+        <textarea id="target2"></textarea>
+        <br><br>
+        
+        <!-- test focus/blur -->
+        <form>
+            <input type="text" class="f" id="text1">
+            <br>
+            <input type="text" class="f" id="text2">
+            <br>
+
+            focus : <span id="rfocus"></span><br>
+            perte de focus : <span id="rblur"></span>            
+        </form>
+        <br><br>
+
+        <!-- redimensionnement fenetre -->
+        <span id="res"></span><br><br>
+
+        <!-- event change -->
+        <form>                
+            Sélectionnez une valeur dans la liste déroulante            
+            <select>            
+                <option>J'aime jQuery</option>            
+                <option>J'adore jQuery</option>            
+                <option>Je raffole de jQuery</option>            
+                <option>jQuery ? Jamais entendu parler !</option>            
+            </select>        
+        </form><br />
+
+        <span id="res1"></span>
+
+        <!--build:js js/main.min.js -->
+        <script src="js/lib/jquery.js"></script>
+        <script src="js/events.js"></script>
+        <!-- endbuild -->
+    </body>
+</html>

@@ -24,12 +24,12 @@ $(function(){
         $('#target').offset(p);
     });
 
-    // //gestion event scroll sur div2
-    // $('#div2').scroll(function () { 
-    //     alert('utilisation du scroll dans la div');
-    // });
+    //gestion event scroll sur div2
+    $('#div2').scroll(function () { 
+        alert('utilisation du scroll dans la div');
+    });
 
-    // $('window').scroll(function () { 
-    //     alert('utilisation du scroll dans la fenêtre');
-    // });
+    $(window).scroll(function () { 
+        alert('utilisation du scroll dans la fenêtre');
+    });
 });
